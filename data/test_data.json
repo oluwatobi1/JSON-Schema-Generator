@@ -1,0 +1,14 @@
+{
+  "attributes": {
+    "appName": "ABCDEFG",
+    "eventType": "ABCDEFGHIJ",
+    "subEventType": "ABCDEFGHIJKLMNOPQRSTU",
+    "sensitive": true
+  },
+  "message": {
+    "strKey": "ABCDEFGHIJKLMNOPQR",
+    "intKey": 1828,
+    "enumKey": ["abc", "123"],
+    "arrkey": [{ "key": "val", "key2": "val2" }]
+  }
+}
