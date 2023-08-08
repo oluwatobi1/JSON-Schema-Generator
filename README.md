@@ -8,16 +8,19 @@ This script reads JSON files, analyzes attributes within the "message" key, and 
 2. No additional installation required.
 
 3. Place your JSON files in the ./data/ directory.
+4. Navigate to the ./solution directory
 
-4. To generate the JSON schemas, run the script by executing the following command in your terminal:
+> `cd solution`
 
-`python3 main.py`
+5. To generate the JSON schemas, run the script by executing the following command in your terminal:
+
+> `python3 main.py`
 
 The generated schema files will be saved in the ./schema/ directory.
 
 6. To run unit test  run the script by executing the following command in your terminal:
 
-`python3 -m unittest`
+> `python3 -m unittest`
 
 ### Additional Information
 * All attributes in the JSON schema are padded with "tag" and "description" keys.
@@ -29,3 +32,8 @@ The schema output captures ONLY the top-level attributes within the "message" ke
 * INTEGER: Identified as an integer and mapped accordingly in the JSON schema output.
 * ENUM: When a value in an array is a string, the program maps the data type as an ENUM.
 * ARRAY: When a value in an array is another JSON object, the program maps the data type as an ARRAY.
+
+
+**Thanks for Reading through.**
+
+**Cheers!**
