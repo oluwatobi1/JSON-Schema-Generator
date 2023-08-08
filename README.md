@@ -20,12 +20,12 @@ The generated schema files will be saved in the ./schema/ directory.
 `python3 -m unittest`
 
 ### Additional Information
-All attributes in the JSON schema are padded with "tag" and "description" keys.
-The schema output captures ONLY the attributes within the "message" key of the input JSON source data.
->> Attributes within the key "attributes" are excluded.
->> All properties in the JSON schema are set to "required": false.
->> Data types in the JSON schema:
->> STRING: Identified as a string and mapped accordingly in the JSON schema output.
->> INTEGER: Identified as an integer and mapped accordingly in the JSON schema output.
->> ENUM: When a value in an array is a string, the program maps the data type as an ENUM.
->> ARRAY: When a value in an array is another JSON object, the program maps the data type as an ARRAY.
+* All attributes in the JSON schema are padded with "tag" and "description" keys.
+The schema output captures ONLY the top-level attributes within the "message" key of the input JSON source data.
+* Attributes within the key "attributes" are excluded.
+* All properties in the JSON schema are set to "required": false.
+* Data types in the JSON schema:
+* STRING: Identified as a string and mapped accordingly in the JSON schema output.
+* INTEGER: Identified as an integer and mapped accordingly in the JSON schema output.
+* ENUM: When a value in an array is a string, the program maps the data type as an ENUM.
+* ARRAY: When a value in an array is another JSON object, the program maps the data type as an ARRAY.
